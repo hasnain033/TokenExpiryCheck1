@@ -36,7 +36,7 @@ class Program
             Console.WriteLine(expiryDate + " " + currentDate);
             var diff = expiryDate - currentDate;
             Console.WriteLine(diff);
-            return Math.Abs(diff.TotalHours) <= 1;
+            return diff.TotalHours <= 1;
 
             /*var nextDate = expiryDate.AddDays(1).Date;
 			Console.WriteLine(expiryDate +" "+ nextDate);
